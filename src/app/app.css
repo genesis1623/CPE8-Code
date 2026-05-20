@@ -1,0 +1,163 @@
+/* PAGE */
+body {
+  font-family: Arial, sans-serif;
+   background-color: #f5f5f5 !important; 
+}
+
+/* TOP BUTTONS */
+
+.top-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 20px 0;
+}
+
+/* BASE BUTTON STYLE */
+.btn {
+  padding: 10px 18px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  background-color: #4a90e2; /* blue */
+  transition: 0.2s ease;
+}
+
+/* HOVER EFFECT */
+.btn:hover {
+  background-color: #357bd8; /* darker blue */
+}
+
+/* ACTIVE / CLICK EFFECT */
+.btn:active {
+  transform: scale(0.97);
+  background-color: #2f6fc2;
+}
+
+/* FORM BUTTONS */
+
+.form-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+/* CREATE / UPDATE BUTTON */
+.form-buttons button[type="submit"] {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #28a745; /* green */
+  color: white;
+  transition: 0.2s;
+}
+
+.form-buttons button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+.form-buttons button[type="submit"]:active {
+  transform: scale(0.97);
+}
+
+/* CANCEL BUTTON */
+.form-buttons button[type="button"] {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #dc3545; /* red */
+  color: white;
+  transition: 0.2s;
+}
+
+.form-buttons button[type="button"]:hover {
+  background-color: #c82333;
+}
+
+.form-buttons button[type="button"]:active {
+  transform: scale(0.97);
+}
+
+/* TABLE */
+
+table {
+  width: 100%;
+  border: 1px solid #091413;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th {
+  background-color: #2B3856;
+  color: white;
+}
+
+tr{
+  background-color: #f5f5f5;
+}
+
+th, td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* MODAL LOGIN */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: #f5f5f5;
+  padding: 20px;
+  width: 350px;   /* increase or adjust */
+  max-width: 90%;
+  border-radius: 8px;
+}
+
+/* MODAL INPUT FIELDS */
+
+.modal input,
+.modal select {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* optional: make focus cleaner */
+.modal input:focus,
+.modal select:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 4px rgba(74, 144, 226, 0.4);
+}
+
+/* CLOSE BUTTON */
+.close {
+  float: right;
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.close:hover {
+  background: #e60000;
+}
+
