@@ -1,0 +1,34 @@
+/* FORCE STACK (email top, password bottom) */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* INPUT FIELDS */
+.login-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+
+  box-sizing: border-box;
+
+  /* THIS creates spacing between email and password */
+  margin-bottom: 15px;
+}
+
+/* LOGIN BUTTON */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #357bd8;
+}
